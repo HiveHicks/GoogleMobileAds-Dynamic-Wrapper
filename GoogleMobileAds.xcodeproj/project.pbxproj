@@ -100,6 +100,7 @@
 		258847631DF0482F00699F2F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258847621DF0482F00699F2F /* QuartzCore.framework */; };
 		258847671DF0484C00699F2F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258847661DF0484C00699F2F /* CFNetwork.framework */; };
 		2588476B1DF04C0C00699F2F /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; fileRef = 2588476A1DF04C0C00699F2F /* GoogleMobileAds */; };
+		25A093071DF063A700F0C555 /* MyFakeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 25A093051DF063A700F0C555 /* MyFakeClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -199,6 +200,7 @@
 		258847641DF0483A00699F2F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		258847661DF0484C00699F2F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		2588476A1DF04C0C00699F2F /* GoogleMobileAds */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = GoogleMobileAds; sourceTree = "<group>"; };
+		25A093051DF063A700F0C555 /* MyFakeClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFakeClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				2588476A1DF04C0C00699F2F /* GoogleMobileAds */,
 				258846AA1DF046E100699F2F /* Headers */,
 				258846A21DF0460B00699F2F /* Info.plist */,
+				25A093051DF063A700F0C555 /* MyFakeClass.m */,
 			);
 			path = GoogleMobileAds;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A093071DF063A700F0C555 /* MyFakeClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +635,10 @@
 		258846A71DF0460B00699F2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5PHGGKL9UQ;
@@ -660,6 +668,10 @@
 		258846A81DF0460B00699F2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5PHGGKL9UQ;
