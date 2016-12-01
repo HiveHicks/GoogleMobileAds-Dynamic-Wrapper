@@ -1,0 +1,17 @@
+# MAC OS
+.DS_Store
+
+# AppCode
+.idea
+
+# Xcode
+xcuserdata
+xcuserdata/
+*.xccheckout
+*.xcuserstate
+*.xcscmblueprint
+*.orig
+*.xcworkspacedata
+
+# CocoaPods
+Pods/
